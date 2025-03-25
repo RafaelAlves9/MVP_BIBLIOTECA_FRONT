@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="index.css">
+   <link rel="icon" type="image/png" href="assets/icon.png">
+   <title>Biblioteca Virtual</title>
+</head>
+<body>
+   <div class="container">
+      <h1>Biblioteca Virtual</h1>
+      <button class="btn" id="openModal">Adicionar Livro</button>
+      <div class="grid" id="dataGrid"></div>
+   </div>
+   
+   <div class="modal" id="modal-form">
+      <div class="modal-content">
+         <span class="close" id="closeModal">&times;</span>
+         <h2 id="modalTitle">Adicionar Livro</h2>
+         <input type="text" id="bookTitle" placeholder="Título do livro">
+         <input type="text" id="bookAuthor" placeholder="Autor do livro">
+         <button class="btn" id="saveItem">Salvar</button>
+      </div>
+   </div>
+
+   <div class="modal" id="modal-notification">
+      <div class="modal-content">
+         <span class="close" id="closeModalNotification">&times;</span>
+         <h2 id="modalTitleNotification"></h2>
+      </div>
+   </div>
+
+   <div id="loading-container" class="loading">
+      <img src="assets/loading.gif" alt="loading gif">
+   </div>
+   
+   <script src="index.js"></script>
+</body>
+</html>
